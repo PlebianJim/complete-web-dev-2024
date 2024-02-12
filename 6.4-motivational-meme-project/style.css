@@ -10,5 +10,11 @@ body {
     width: 100vw;
 }
 
-
+.container {
+    border: 1px solid white;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 5%;
+}
 /* font-family: "Libre Baskerville", serif; */

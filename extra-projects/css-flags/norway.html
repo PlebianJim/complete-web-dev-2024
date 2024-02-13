@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flags - Norway</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .flag {
+            width: 900px;
+            height: 600px;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #BA0C2F;
+        }
+
+        .stripe {
+            background-color: #FFFFFF;
+        }
+
+        .stripe-blue {
+            background-color: #00205B;
+        }
+
+        .vert-stripe-white {
+            position: absolute;
+            width: 100px;
+            height: 100%;
+            left: 25%;
+        }
+
+        .hori-stripe-white {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            top: 250px;
+        }
+
+        .vert-stripe-blue {
+            position: absolute;
+            width: 50px;
+            height: 100%;
+            left: 249px;
+        }
+
+        .hori-stripe-blue {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            top: 275px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="flag">
+        <div class="vert-stripe-white stripe"></div>
+        <div class="hori-stripe-white stripe"></div>
+        <div class="vert-stripe-blue stripe-blue"></div>
+        <div class="hori-stripe-blue stripe-blue"></div>
+    </div>
 </body>
 </html>

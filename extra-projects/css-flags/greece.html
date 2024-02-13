@@ -5,19 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flags - Greece</title>
     <style>
-        
+        .flag {
+            width: 900px;
+            height: 600px;
+            position: fixed;
+        }
+
+        .flag > div {
+            width: 270px;
+            height: 270px;
+            background-color: #001489;
+            position: fixed;
+            z-index: 100;
+        }
+
+        .flag > div > div {
+            width: 50px;
+            height: 100%;
+            background-color: white;
+            position: relative;
+            left: 40%;
+            z-index: 100;
+        }
+
+        .flag > div > div > div {
+            width: 270px;
+            height: 50px;
+            background-color: white;
+            position: relative;
+            top: 40%;
+            left: -108px;
+            z-index: 100;
+        }
+
+        .stripes {
+            background-color: #001489;
+            width: 900px;
+            height: 50px;
+            position: fixed;
+            z-index: -1;
+        }
+
+        .stripes > div {
+            background-color: #001489;
+            width: 900px;
+            height: 50px;
+            position: relative;
+            top: 109px;
+            z-index: -1;
+        }
+
+        .stripes > div > div {
+            background-color: #001489;
+            width: 900px;
+            height: 50px;
+            position: relative;
+            top: 112px;
+            z-index: -1;
+        }
+
+        .stripes > div > div > div {
+            background-color: #001489;
+            width: 900px;
+            height: 50px;
+            position: relative;
+            top: 112px;
+            z-index: -1;
+        }
+
+        .stripes > div > div > div > div {
+            background-color: #001489;
+            width: 900px;
+            height: 50px;
+            position: relative;
+            top: 112px;
+            z-index: -1;
+        }
+
+        .stripes > div > div > div > div > div {
+            background-color: #001489;
+            width: 900px;
+            height: 50px;
+            position: relative;
+            top: 112px;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
     <div class="flag">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="stripes">
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

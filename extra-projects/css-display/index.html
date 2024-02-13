@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
     <title>CSS - Display (Block//Inline//Inline-Block)</title>
 </head>
+
 <body>
-    
+    <h1>Once again, shamelessly ripped from <a href="https://appbrewery.github.io/css-display/">The App Brewery and
+            Angela Yu</a></h1>
+    <h2>Thanks Angela!</h2>
+    <p class="block" style="height: 209px; width: 311px;">Block Paragraph</p>
+    <p class="inline" style="height: 201px; width: 248px;">Inline Paragraph</p>
+    <p class="inline-block" style="height: 165px; width: 391px;">Inline-Block Paragraph</p>
+
+    <div class="input-group">
+        <div class="slider-group">
+            <label class="slider-label" for="block-height-slider">Block Height:</label>
+            <input type="range" id="block-height-slider" min="100" max="2000" value="200" class="slider red">
+            <output id="block-height-output">209</output>
+        </div>
+        <div class="slider-group">
+            <label class="slider-label" for="block-width-slider">Block Width:</label>
+            <input type="range" id="block-width-slider" min="100" max="2000" value="200" class="slider red">
+            <output id="block-width-output">311</output>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <div class="slider-group">
+            <label class="slider-label" for="inline-height-slider">Inline Height:</label>
+            <input type="range" id="inline-height-slider" min="100" max="2000" value="200" class="slider green">
+            <output id="inline-height-output">201</output>
+        </div>
+        <div class="slider-group">
+            <label class="slider-label" for="inline-width-slider">Inline Width:</label>
+            <input type="range" id="inline-width-slider" min="100" max="2000" value="200" class="slider green">
+            <output id="inline-width-output">248</output>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <div class="slider-group">
+            <label class="slider-label" for="inline-block-height-slider">Inline-Block Height:</label>
+            <input type="range" id="inline-block-height-slider" min="100" max="2000" value="200" class="slider blue">
+            <output id="inline-block-height-output">165</output>
+        </div>
+        <div class="slider-group">
+            <label class="slider-label" for="inline-block-width-slider">Inline-Block Width:</label>
+            <input type="range" id="inline-block-width-slider" min="100" max="2000" value="200" class="slider blue">
+            <output id="inline-block-width-output">391</output>
+        </div>
+    </div>
+
 </body>
+
 </html>

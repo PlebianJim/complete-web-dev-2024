@@ -120,3 +120,36 @@ body {
 }
 
 /* Fourth layout */
+.fourth-g-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.fourth-g-c-header {
+    background-color: coral;
+    grid-column: span 3;
+}
+
+.fourth-g-c-main-left {
+    background-color: turquoise;
+    grid-row: span 2;
+}
+
+.fourth-g-c-main-middle {
+    background-color: turquoise;
+    grid-row: span 2;
+}
+
+.fourth-g-c-main-right {
+    background-color: turquoise;
+    grid-row: span 2;
+}
+
+.fourth-g-c-footer {
+    background-color: gray;
+    grid-column: span 3;
+}

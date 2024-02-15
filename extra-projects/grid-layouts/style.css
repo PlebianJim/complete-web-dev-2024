@@ -81,3 +81,42 @@ body {
     grid-column: span 3;
     grid-row: span 2;
 }
+
+/* Third layout */
+.third-g-c {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.third-g-c-header {
+    background-color: grey;
+    grid-column: span 3;
+}
+
+.third-g-c-main {
+    background-color: coral;
+    grid-column: span 2;
+}
+
+.third-g-c-article-left {
+    background-color: turquoise;
+    grid-column: 1;
+    grid-row: span 4;
+}
+
+.third-g-c-article-right {
+    background-color: turquoise;
+    grid-column: 2;
+    grid-row: span 4;
+}
+
+.third-g-c-sidebar {
+    background-color: grey;
+    grid-row: span 5;
+}
+
+/* Fourth layout */

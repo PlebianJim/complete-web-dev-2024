@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+/* First Layout */
+.first-g-c {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 300px;
+    gap: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.first-g-c-header {
+    grid-column: span 2;
+    background-color: coral;
+}
+
+.first-g-c-sidebar {
+    grid-row: span 2;
+    background-color: turquoise;
+}
+
+.first-g-c-main {
+    background-color: grey;
+    grid-row: span 2;
+}
+
+/* Second layout */
+.second-g-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    gap: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.second-g-c-top-one {
+    grid-row: span 2;
+    background-color: grey;
+}
+
+.second-g-c-top-two {
+    background-color: turquoise;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.second-g-c-top-two:nth-child(2) {
+    background-color: turquoise;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.second-g-c-top-two:nth-child(3) {
+    background-color: turquoise;
+    grid-row: 2;
+    grid-column: 4;
+}
+
+.second-g-c-sidebar {
+    background-color: turquoise;
+    grid-row: span 4;
+}
+
+.second-g-c-main-top {
+    background-color: coral;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.second-g-c-main-bottom {
+    background-color: turquoise;
+    grid-column: span 3;
+    grid-row: span 2;
+}

@@ -22,20 +22,54 @@
             border: 10px solid black;
         }
 
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 200px 200px;
+            gap: 30px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .card {
+            background-color: blue;
+            border: 2px solid red;
+        }
+
+        .first {
+            grid-column: span 2;
+            background-color: red;
+            border: 2px solid blue;
+        }
+
         @media screen and (max-width: 600px) {
             .media-query {
                 position: relative;
                 background-color: red;
                 height: 250px;
                 width: 250px;
+                left: 250px;
             }
         }
     </style>
 </head>
 
 <body>
+    <h2>MEDIA QUERIES</h2>
+    <p>Reducing the size of the viewport will make the square smaller and red</p>
     <div class="media-query"></div>
-    
+    <br>
+    <h2>DISPLAY: GRID;</h2>
+    <p>Add a container and assign it the grid value for it's display property. Once this is done, it's descendents are
+        known as grid children and inherit a specific layout style that can be attached. In the example below, there are
+        5 direct children. The first acts as a header section and the following 4 are sections on a page</p>
+    <div class="grid-container">
+        <div class="first card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
 </body>
 
 </html>

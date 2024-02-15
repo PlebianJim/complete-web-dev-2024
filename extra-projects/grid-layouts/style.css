@@ -153,3 +153,200 @@ body {
     background-color: gray;
     grid-column: span 3;
 }
+
+/* Fifth layout */
+.fifth-g-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 200px;
+    gap: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.fifth-g-c-header {
+    background-color: coral;
+    grid-column: span 4;
+}
+
+.fifth-g-c-main-card {
+    background-color: turquoise;
+    grid-column: span 2;
+}
+
+/* Sixth layout */
+.sixth-g-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    border: 1px solid black;
+    gap: 30px;
+    padding: 10px;
+}
+
+.sixth-g-c-header {
+    background-color: grey;
+    grid-column: 1 / 4;
+}
+
+.sixth-g-c-main {
+    background-color: coral;
+    grid-column: 1 / 4;
+    grid-row: 2 / 6;
+}
+
+.sixth-g-c-card {
+    background-color: turquoise;
+    grid-row: 6 /8;
+}
+
+/* Seventh layout */
+.seventh-g-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 30px
+}
+
+.seventh-g-c-header {
+    background-color: coral;
+    grid-column: 1 / 6;
+}
+
+.seventh-g-c-main {
+    background-color: gray;
+    grid-column: 2 / 5;
+}
+
+.seventh-g-c-card-left {
+    background-color: turquoise;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.seventh-g-c-card-middle {
+    background-color: turquoise;
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.seventh-g-c-card-right {
+    background-color: turquoise;
+    grid-row: 3;
+    grid-column: 4;
+}
+
+/* Eigth layout */
+.eigth-g-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 30px;
+}
+
+.eigth-g-c-header {
+    background-color: coral;
+    grid-column: span 4;
+}
+
+.eigth-g-c-card {
+    background-color: turquoise;
+    grid-row: span 2;
+}
+
+/* Ninth layout */
+.ninth-g-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 30px;
+}
+
+.ninth-g-c-header {
+    background-color: coral;
+    grid-column: span 3;
+}
+
+.ninth-g-c-main {
+    background-color: turquoise;
+    grid-column: span 2;
+    grid-row: span 6;
+}
+
+.ninth-g-c-sidebar-top {
+    background-color: gray;
+    grid-row: span 3;
+}
+
+.ninth-g-c-sidebar-bottom {
+    background-color: gray;
+    grid-row: span 3;
+}
+
+/* Tenth layout */
+.tenth-g-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    gap: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tenth-g-c-header {
+    background-color: coral;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.tenth-g-c-nav {
+    background-color: gray;
+    grid-column: span 3;
+}
+
+.tenth-g-c-card {
+    background-color: turquoise;
+    grid-row: span 2;
+}
+
+/* Eleventh layout */
+.eleventh-g-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    gap: 30px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.eleventh-g-c-header {
+    background-color: turquoise;
+    grid-column: span 4;
+}
+
+.eleventh-g-c-main-top {
+    background-color: turquoise;
+    grid-column: 2 / 4;
+}
+
+.eleventh-g-c-main-bottom {
+    background-color: turquoise;
+    grid-column: 2 / 4;
+}
+
+.eleventh-g-c-side-left {
+    background-color: coral;
+    grid-row: 2 / 4;
+}
+
+.eleventh-g-c-side-right {
+    background-color: coral;
+    grid-row: 2 / 4;
+    grid-column: 4
+}

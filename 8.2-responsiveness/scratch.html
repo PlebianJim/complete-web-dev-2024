@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8.2 - Scratch file</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px;
         }
 
         .media-query {
@@ -31,12 +37,12 @@
             padding: 10px;
         }
 
-        .card {
+        .card-grid {
             background-color: blue;
             border: 2px solid red;
         }
 
-        .first {
+        .first-grid {
             grid-column: span 2;
             background-color: red;
             border: 2px solid blue;
@@ -51,6 +57,26 @@
                 left: 250px;
             }
         }
+
+        .flex-container {
+            display: flex;
+            border: 1px solid black;
+        }
+
+        .card-flex {
+            background: lightblue;
+            border: 30px solid white;
+            height: 100px;
+            flex: 1;
+        }
+
+        .first-flex {
+            flex: 2;
+        }
+
+        .second-flex {
+            flex: 0.5;
+        }
     </style>
 </head>
 
@@ -58,18 +84,53 @@
     <h2>MEDIA QUERIES</h2>
     <p>Reducing the size of the viewport will make the square smaller and red</p>
     <div class="media-query"></div>
+
     <br>
     <h2>DISPLAY: GRID;</h2>
     <p>Add a container and assign it the grid value for it's display property. Once this is done, it's descendents are
         known as grid children and inherit a specific layout style that can be attached. In the example below, there are
         5 direct children. The first acts as a header section and the following 4 are sections on a page</p>
     <div class="grid-container">
-        <div class="first card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="first-grid card-grid"></div>
+        <div class="card-grid"></div>
+        <div class="card-grid"></div>
+        <div class="card-grid"></div>
+        <div class="card-grid"></div>
     </div>
+
+    <br>
+    <h2>DISPLAY: FLEX</h2>
+    <div class="flex-container">
+        <div class="first-flex card-flex"></div>
+        <div class="second-flex card-flex"></div>
+        <div class="card-flex"></div>
+        <div class="card-flex"></div>
+    </div>
+
+    <br>
+    <h2>BOOTSTRAP FRAMEWORK</h2>
+    <p>Link via the CDN to the Bootstrap framework. The link to the CSS goes in the head and then a JS reference is
+        required as well. Bootstrap works on a 12 divsion structure meaning the viewport is divided into 12 equal
+        sections. In the example below, we have 3 cards. The first is using up 6 units of space, the second 2 and the
+        last 4 units of space</p>
+    <div class="container">
+        <div class="row">
+            <div class="card col-6">Card 6</div>
+            <div class="card col-2">Card 2</div>
+            <div class="card col-4">Card 4</div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

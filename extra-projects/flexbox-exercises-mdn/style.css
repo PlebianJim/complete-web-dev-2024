@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.image {
+    width: 100%;
+}
+
+hr {
+    padding: 5px;
+    margin: 10px;
+    background-color: gray;
+}
+
+/* Task one */
+.task-one-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-one-ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    list-style: none;
+}
+
+.task-one-li {
+    background-color: #4d7298;
+    padding: 1rem;
+    border: 2px solid #77a6b6;
+    border-radius: 0.5rem;
+    display: inline-block;
+    font-size: 1.20rem;
+    cursor: pointer;
+}
+
+.task-one-li>a {
+    color: white;
+    text-decoration: none;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Task 2 */
+.task-two-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.task-two-ul {
+    display: flex;
+}
+
+.task-two-li {
+    flex: 1;
+    list-style: none;
+    height: 300px;
+    background-color: #4d7298;
+    border: 2px solid #77a6b6;
+    border-radius: 0.5rem;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.task-two-li>a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Task 3 */
+.task-three-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.task-three-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border: 4px solid #77a6b6;
+    border-radius: 1rem;
+}
+
+.task-three-li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #4d7298;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+    width: 50%;
+    line-height: 1rem;
+    border-radius: 0.5rem;
+}
+
+.task-three-li > span {
+    font-size: 1rem;
+}
+
+/* Task 4 */
+.task-four-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.task-four-li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #77a6b6;
+    background-color: #4d7298;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+}

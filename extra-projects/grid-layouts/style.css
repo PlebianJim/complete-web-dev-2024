@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 body {
     padding: 10px;
+    border-radius: 10px;
 }
 
 /* First Layout */
@@ -16,21 +18,25 @@ body {
     gap: 30px;
     border: 1px solid black;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .first-g-c-header {
     grid-column: span 2;
     background-color: coral;
+    border-radius: 10px;
 }
 
 .first-g-c-sidebar {
     grid-row: span 2;
     background-color: turquoise;
+    border-radius: 10px;
 }
 
 .first-g-c-main {
     background-color: grey;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 /* Second layout */
@@ -41,46 +47,54 @@ body {
     gap: 30px;
     border: 1px solid black;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .second-g-c-top-one {
     grid-row: span 2;
     background-color: grey;
+    border-radius: 10px;
 }
 
 .second-g-c-top-two {
     background-color: turquoise;
     grid-row: 2;
     grid-column: 2;
+    border-radius: 10px;
 }
 
 .second-g-c-top-two:nth-child(2) {
     background-color: turquoise;
     grid-row: 2;
     grid-column: 3;
+    border-radius: 10px;
 }
 
 .second-g-c-top-two:nth-child(3) {
     background-color: turquoise;
     grid-row: 2;
     grid-column: 4;
+    border-radius: 10px;
 }
 
 .second-g-c-sidebar {
     background-color: turquoise;
     grid-row: span 4;
+    border-radius: 10px;
 }
 
 .second-g-c-main-top {
     background-color: coral;
     grid-column: span 3;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .second-g-c-main-bottom {
     background-color: turquoise;
     grid-column: span 3;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 /* Third layout */
@@ -91,33 +105,39 @@ body {
     gap: 30px;
     border: 1px solid black;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .third-g-c-header {
     background-color: grey;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 .third-g-c-main {
     background-color: coral;
     grid-column: span 2;
+    border-radius: 10px;
 }
 
 .third-g-c-article-left {
     background-color: turquoise;
     grid-column: 1;
     grid-row: span 4;
+    border-radius: 10px;
 }
 
 .third-g-c-article-right {
     background-color: turquoise;
     grid-column: 2;
     grid-row: span 4;
+    border-radius: 10px;
 }
 
 .third-g-c-sidebar {
     background-color: grey;
     grid-row: span 5;
+    border-radius: 10px;
 }
 
 /* Fourth layout */
@@ -128,31 +148,37 @@ body {
     gap: 30px;
     border: 1px solid black;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .fourth-g-c-header {
     background-color: coral;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 .fourth-g-c-main-left {
     background-color: turquoise;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .fourth-g-c-main-middle {
     background-color: turquoise;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .fourth-g-c-main-right {
     background-color: turquoise;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .fourth-g-c-footer {
     background-color: gray;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 /* Fifth layout */
@@ -163,16 +189,19 @@ body {
     gap: 30px;
     border: 1px solid black;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .fifth-g-c-header {
     background-color: coral;
     grid-column: span 4;
+    border-radius: 10px;
 }
 
 .fifth-g-c-main-card {
     background-color: turquoise;
     grid-column: span 2;
+    border-radius: 10px;
 }
 
 /* Sixth layout */
@@ -183,22 +212,26 @@ body {
     border: 1px solid black;
     gap: 30px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .sixth-g-c-header {
     background-color: grey;
     grid-column: 1 / 4;
+    border-radius: 10px;
 }
 
 .sixth-g-c-main {
     background-color: coral;
     grid-column: 1 / 4;
     grid-row: 2 / 6;
+    border-radius: 10px;
 }
 
 .sixth-g-c-card {
     background-color: turquoise;
     grid-row: 6 /8;
+    border-radius: 10px;
 }
 
 /* Seventh layout */
@@ -208,38 +241,44 @@ body {
     grid-template-rows: 200px 200px 200px;
     border: 1px solid black;
     padding: 10px;
-    gap: 30px
+    gap: 30px;
+    border-radius: 10px;
 }
 
 .seventh-g-c-header {
     background-color: coral;
     grid-column: 1 / 6;
+    border-radius: 10px;
 }
 
 .seventh-g-c-main {
     background-color: gray;
     grid-column: 2 / 5;
+    border-radius: 10px;
 }
 
 .seventh-g-c-card-left {
     background-color: turquoise;
     grid-row: 3;
     grid-column: 2;
+    border-radius: 10px;
 }
 
 .seventh-g-c-card-middle {
     background-color: turquoise;
     grid-row: 3;
     grid-column: 3;
+    border-radius: 10px;
 }
 
 .seventh-g-c-card-right {
     background-color: turquoise;
     grid-row: 3;
     grid-column: 4;
+    border-radius: 10px;
 }
 
-/* Eigth layout */
+/* Eighth layout */
 .eigth-g-c {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -247,16 +286,19 @@ body {
     border: 1px solid black;
     padding: 10px;
     gap: 30px;
+    border-radius: 10px;
 }
 
 .eigth-g-c-header {
     background-color: coral;
     grid-column: span 4;
+    border-radius: 10px;
 }
 
 .eigth-g-c-card {
     background-color: turquoise;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 /* Ninth layout */
@@ -267,27 +309,32 @@ body {
     border: 1px solid black;
     padding: 10px;
     gap: 30px;
+    border-radius: 10px;
 }
 
 .ninth-g-c-header {
     background-color: coral;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 .ninth-g-c-main {
     background-color: turquoise;
     grid-column: span 2;
     grid-row: span 6;
+    border-radius: 10px;
 }
 
 .ninth-g-c-sidebar-top {
     background-color: gray;
     grid-row: span 3;
+    border-radius: 10px;
 }
 
 .ninth-g-c-sidebar-bottom {
     background-color: gray;
     grid-row: span 3;
+    border-radius: 10px;
 }
 
 /* Tenth layout */
@@ -298,22 +345,26 @@ body {
     gap: 30px;
     border: 1px solid black;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .tenth-g-c-header {
     background-color: coral;
     grid-column: span 3;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .tenth-g-c-nav {
     background-color: gray;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 .tenth-g-c-card {
     background-color: turquoise;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 /* Eleventh layout */
@@ -324,57 +375,67 @@ body {
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .eleventh-g-c-header {
     background-color: turquoise;
     grid-column: span 4;
+    border-radius: 10px;
 }
 
 .eleventh-g-c-main-top {
     background-color: turquoise;
     grid-column: 2 / 4;
+    border-radius: 10px;
 }
 
 .eleventh-g-c-main-bottom {
     background-color: turquoise;
     grid-column: 2 / 4;
+    border-radius: 10px;
 }
 
 .eleventh-g-c-side-left {
     background-color: coral;
     grid-row: 2 / 4;
+    border-radius: 10px;
 }
 
 .eleventh-g-c-side-right {
     background-color: coral;
     grid-row: 2 / 4;
-    grid-column: 4
+    grid-column: 4;
+    border-radius: 10px;
 }
 
 /* Twelfth layout */
 .twelfth-g-c {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .twelfth-g-c-header {
     background-color: gray;
     grid-column: span 4;
+    border-radius: 10px;
 }
 
 .twelfth-g-c-card {
     background-color: coral;
     grid-row: span 4;
+    border-radius: 10px;
 }
 
 .twelfth-g-c-footer {
     background-color: gray;
     grid-column: span 4;
+    border-radius: 10px;
 }
 
 /* Thirteenth layout */
@@ -385,27 +446,32 @@ body {
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .thirteenth-g-c-header {
     background-color: turquoise;
     grid-column: span 4;
+    border-radius: 10px;
 }
 
 .thirteenth-g-c-main {
     background-color: coral;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
+    border-radius: 10px;
 }
 
 .thirteenth-g-c-side-left {
     background-color: turquoise;
     grid-row: 2 / 4;
+    border-radius: 10px;
 }
 
 .thirteenth-g-c-side-right {
     background-color: turquoise;
     grid-row: 2 / 4;
+    border-radius: 10px;
 }
 
 /* Fourteenth layout */
@@ -416,42 +482,50 @@ body {
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .fourteenth-g-c-header {
     background-color: coral;
     grid-column: span 5;
+    border-radius: 10px;
 }
 
 .fourteenth-g-c-card-one {
     background-color: turquoise;
     grid-column: 2;
+    border-radius: 10px;
 }
 
 .fourteenth-g-c-card-two {
     background-color: turquoise;
+    border-radius: 10px;
 }
 
 .fourteenth-g-c-card-three {
     background-color: turquoise;
+    border-radius: 10px;
 }
 
 .fourteenth-g-c-card-four {
     background-color: turquoise;
     grid-row: 3;
     grid-column: 2;
+    border-radius: 10px;
 }
 
 .fourteenth-g-c-card-five {
     background-color: turquoise;
     grid-row: 3;
     grid-column: 3;
+    border-radius: 10px;
 }
 
 .fourteenth-g-c-card-six {
     background-color: turquoise;
     grid-row: 3;
     grid-column: 4;
+    border-radius: 10px;
 }
 
 /* Fifteenth layout */
@@ -462,153 +536,186 @@ body {
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .fifteenth-g-c-header-left {
     background-color: turquoise;
+    border-radius: 10px;
 }
 
 .fifteenth-g-c-header-right {
     background-color: turquoise;
     grid-column: span 2;
+    border-radius: 10px;
 }
 
 .fifteenth-g-c-main {
     background-color: coral;
     grid-area: span 2 / span 3;
+    border-radius: 10px;
 }
 
 .fifteenth-g-c-card {
     background-color: gray;
     grid-row: span 3;
+    border-radius: 10px;
 }
 
 /* Sixteenth layout */
 .sixteenth-g-c {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .sixteenth-g-c-header {
     background-color: turquoise;
     grid-column: span 5;
+    border-radius: 10px;
 }
 
 .sixteenth-g-c-main {
     background-color: coral;
     grid-area: 2 / 2 / 5 / 5;
+    border-radius: 10px;
 }
 
 .sixteenth-g-c-card-left {
     background-color: gray;
     grid-row: span 5;
     grid-column: 2;
+    border-radius: 10px;
 }
 
 .sixteenth-g-c-card-middle {
     background-color: gray;
     grid-row: span 5;
     grid-column: 3;
+    border-radius: 10px;
 }
 
 .sixteenth-g-c-card-right {
     background-color: gray;
     grid-row: span 5;
     grid-column: 4;
+    border-radius: 10px;
 }
 
 /* Seventeenth layout */
 .seventeenth-g-c {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    gap: 30px;
-    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
     border: 1px solid black;
+    padding: 10px;
+    gap: 30px;
+    border-radius: 10px;
 }
 
 .seventeenth-g-c-header {
     background-color: turquoise;
     grid-area: 1 / 1 / 2 / 4;
+    border-radius: 10px;
 }
 
 .seventeenth-g-c-main {
-    background-color: coral;
-    grid-column: 2;
-    grid-row: span 4;
+    background-color: gray;
+    grid-column: 2 / 5;
+    border-radius: 10px;
 }
 
 .seventeenth-g-c-card-left-top {
     background-color: gray;
     grid-row: 2 / 4;
+    border-radius: 10px;
 }
 
 .seventeenth-g-c-card-left-bottom {
     background-color: turquoise;
     grid-column: 1;
     grid-row: span 5;
+    border-radius: 10px;
 }
 
 .seventeenth-g-c-card-right-top {
     background-color: turquoise;
     grid-row: 2;
     grid-column: 3;
+    border-radius: 10px;
 }
 
 .seventeenth-g-c-card-right-bottom {
     background-color: gray;
     grid-column: 3;
     grid-row: 3 / 9;
+    border-radius: 10px;
 }
 
 .seventeenth-g-c-footer {
     background-color: turquoise;
     grid-column: 2;
     grid-row: 6 / 9;
+    border-radius: 10px;
 }
 
 /* Eighteenth layout */
 .eighteenth-g-c {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .eighteenth-g-c-header {
     background-color: turquoise;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 .eighteenth-g-c-main-left {
-    background-color: coral;
+    background-color: gray;
     grid-area: 2 / 1 / 6 / 3;
+    border-radius: 10px;
 }
 
 .eighteenth-g-c-main-right {
     background-color: turquoise;
     grid-row: span 4;
+    border-radius: 10px;
 }
 
 .eighteenth-g-c-card-left {
     background-color: gray;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .eighteenth-g-c-card-middle {
     background-color: turquoise;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .eighteenth-g-c-card-right {
     background-color: coral;
     grid-row: span 2;
+    border-radius: 10px;
+}
+
+/* Nineteenth layout */
+.nineteenth-g-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    border-radius: 10px;
 }
 
 /* Nineteenth layout */
@@ -619,21 +726,25 @@ body {
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .nineteenth-g-c-main {
     background-color: coral;
     grid-row: span 5;
+    border-radius: 10px;
 }
 
 .nineteenth-g-c-nav-right {
     background-color: gray;
     grid-row: span 5;
+    border-radius: 10px;
 }
 
 .nineteenth-g-c-footer {
     background-color: turquoise;
     grid-column: span 2;
+    border-radius: 10px;
 }
 
 /* Twentieth layout */
@@ -644,37 +755,44 @@ body {
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .twentieth-g-c-top-left {
     background-color: gray;
     grid-row: 2;
+    border-radius: 10px;
 }
 
 .twentieth-g-c-top-right {
     background-color: turquoise;
     grid-column: span 2;
     grid-row: 2;
+    border-radius: 10px;
 }
 
 .twentieth-g-c-card-left {
     background-color: coral;
     grid-row: span 3;
+    border-radius: 10px;
 }
 
 .twentieth-g-c-card-middle {
     background-color: gray;
-    grid-row: span 3
+    grid-row: span 3;
+    border-radius: 10px;
 }
 
 .twentieth-g-c-card-right {
     background-color: turquoise;
-    grid-row: span 3
+    grid-row: span 3;
+    border-radius: 10px;
 }
 
 .twentieth-g-c-footer {
     background-color: gray;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 /* Twenty-first layout */
@@ -685,31 +803,37 @@ body {
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .twentyFirst-g-c-header {
     background-color: turquoise;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 .twentyFirst-g-c-main-left {
     background-color: gray;
     grid-area: 2 / 1 / 5 / 3;
+    border-radius: 10px;
 }
 
 .twentyFirst-g-c-side-right {
     background-color: coral;
     grid-row: span 3;
+    border-radius: 10px;
 }
 
 .twentyFirst-g-c-foot-left {
     background-color: coral;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .twentyFirst-g-c-foot-right {
     background-color: turquoise;
     grid-area: 5 / 2 / 7 / 4;
+    border-radius: 10px;
 }
 
 /* Twenty-second layout */
@@ -720,37 +844,44 @@ body {
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .twentySecond-g-c-header {
     background-color: coral;
     grid-column: span 4;
+    border-radius: 10px;
 }
 
 .twentySecond-g-c-main-left {
     background-color: turquoise;
     grid-row: span 4;
+    border-radius: 10px;
 }
 
 .twentySecond-g-c-main-middle {
     background-color: gray;
     grid-row: span 4;
     grid-column: span 2;
+    border-radius: 10px;
 }
 
 .twentySecond-g-c-main-right {
     background-color: coral;
     grid-row: span 4;
+    border-radius: 10px;
 }
 
 .twentySecond-g-c-footer-left {
     background-color: coral;
     grid-column: span 2;
+    border-radius: 10px;
 }
 
 .twentySecond-g-c-footer-right {
     background-color: turquoise;
     grid-column: span 2;
+    border-radius: 10px;
 }
 
 /* Twenty-third layout */
@@ -761,37 +892,44 @@ body {
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .twentyThird-g-c-header {
     background-color: turquoise;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 .twentyThird-g-c-left-top {
     background-color: gray;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .twentyThird-g-c-left-bottom {
     background-color: turquoise;
     grid-area: 4 / 1 / 6 / 1;
+    border-radius: 10px;
 }
 
 .twentyThird-g-c-main {
     background-color: coral;
     grid-area: 2 / 2 / 6 / 2;
+    border-radius: 10px;
 }
 
 .twentyThird-g-c-right-top {
     background-color: gray;
     grid-column: 3;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .twentyThird-g-c-right-bottom {
     background-color: turquoise;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 /* Twenty-fourth layout */
@@ -802,36 +940,43 @@ body {
     gap: 30px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .twentyFourth-g-c-header {
     background-color: coral;
     grid-column: span 9;
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .twentyFourth-g-c-main-left {
     background-color: gray;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 .twentyFourth-g-c-main-middle {
     background-color: gray;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 .twentyFourth-g-c-main-right {
     background-color: gray;
     grid-column: span 3;
+    border-radius: 10px;
 }
 
 .twentyFourth-g-c-footer-left {
     background-color: turquoise;
     grid-row: span 4;
     grid-column: span 4;
+    border-radius: 10px;
 }
 
 .twentyFourth-g-c-footer-right {
     background-color: turquoise;
     grid-area: 4 / 6 / 8 / 10;
+    border-radius: 10px;
 }

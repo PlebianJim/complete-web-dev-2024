@@ -16,11 +16,6 @@
             display: flex;
             flex-wrap: wrap;
             height: 80vh;
-            width: 100vw;
-        }
-
-        .container>* {
-            width: 200px;
         }
 
         .red {
@@ -53,7 +48,9 @@
     </style>
 </head>
 <h1>Flex Box Attributes Showcase</h1>
-<p>As always, copyright is with Angela Yu and the AppBrewery. Original can be found <a href="https://appbrewery.github.io/flex-layout/">here</a></p>
+<p>As always, copyright is with Angela Yu and the AppBrewery. Original can be found <a
+        href="https://appbrewery.github.io/flex-layout/">here</a></p>
+
 <body>
     <div class="container">
         <div class="red">Red</div>
@@ -108,38 +105,40 @@
             </select>
         </div>
     </div>
+
+    <script>
+        // Get the flex container
+        const flexContainer = document.querySelector('.container');
+        // Get the dropdowns
+        const justifyContentDropdown = document.getElementById('justify-content');
+        const flexWrapDropdown = document.getElementById('flex-wrap');
+        const alignItemsDropdown = document.getElementById('align-items');
+        const alignContentDropdown = document.getElementById('align-content');
+
+        // Set the initial values
+        flexContainer.style.justifyContent = justifyContentDropdown.value;
+        flexContainer.style.flexWrap = flexWrapDropdown.value;
+        flexContainer.style.alignItems = alignItemsDropdown.value;
+        flexContainer.style.alignContent = alignContentDropdown.value;
+
+        // Add event listeners to the dropdowns
+        justifyContentDropdown.addEventListener('change', (event) => {
+            flexContainer.style.justifyContent = event.target.value;
+        });
+
+        flexWrapDropdown.addEventListener('change', (event) => {
+            flexContainer.style.flexWrap = event.target.value;
+        });
+
+        alignItemsDropdown.addEventListener('change', (event) => {
+            flexContainer.style.alignItems = event.target.value;
+        });
+
+        alignContentDropdown.addEventListener('change', (event) => {
+            flexContainer.style.alignContent = event.target.value;
+        });
+    </script>
 </body>
-<script>
-    // Get the flex container
-    const flexContainer = document.querySelector('.container');
-    // Get the dropdowns
-    const justifyContentDropdown = document.getElementById('justify-content');
-    const flexWrapDropdown = document.getElementById('flex-wrap');
-    const alignItemsDropdown = document.getElementById('align-items');
-    const alignContentDropdown = document.getElementById('align-content');
 
-    // Set the initial values
-    flexContainer.style.justifyContent = justifyContentDropdown.value;
-    flexContainer.style.flexWrap = flexWrapDropdown.value;
-    flexContainer.style.alignItems = alignItemsDropdown.value;
-    flexContainer.style.alignContent = alignContentDropdown.value;
-
-    // Add event listeners to the dropdowns
-    justifyContentDropdown.addEventListener('change', (event) => {
-        flexContainer.style.justifyContent = event.target.value;
-    });
-
-    flexWrapDropdown.addEventListener('change', (event) => {
-        flexContainer.style.flexWrap = event.target.value;
-    });
-
-    alignItemsDropdown.addEventListener('change', (event) => {
-        flexContainer.style.alignItems = event.target.value;
-    });
-
-    alignContentDropdown.addEventListener('change', (event) => {
-        flexContainer.style.alignContent = event.target.value;
-    });
-</script>
 
 </html>

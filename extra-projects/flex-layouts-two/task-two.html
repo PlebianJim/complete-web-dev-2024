@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Flexbox Exercises - Task Two</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            font-weight: 200;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .home-icon {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .item {
+            text-align: center;
+            background-color: gray;
+            border: 1px solid white;
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item1 {
+            height: 20vh;
+        }
+
+        .item2 {
+            height: 30vh;
+        }
+
+        .item3 {
+            height: 15vh;
+        }
+
+        .item4 {
+            height: 35vh;
+        }
+
+        .item5 {
+            height: 50vh;
+        }
+
+        .item6 {
+            height: 20vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-icon">
+        <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+    </div>
+
+    <div class="container">
+        <div class="item item1">20vh</div>
+        <div class="item item2">30vh</div>
+        <div class="item item3">15vh</div>
+        <div class="item item4">35vh</div>
+        <div class="item item5">50vh</div>
+        <div class="item item6">20vh</div>
+    </div>
+</body>
+
+</html>

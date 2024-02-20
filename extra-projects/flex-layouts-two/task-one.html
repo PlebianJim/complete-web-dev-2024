@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Flexbox Exercises - Task One</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            font-weight: 300;
+            color: white;
+        }
+
+        .home-icon {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .item {
+            background-color: gray;
+            padding: 16px;
+            border: 1px solid white;
+            border-radius: 0.5rem;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 80vh
+        }
+
+        .aside {
+            display: flex;
+            min-width: 40vw;
+        }
+
+        .footer {
+
+        }
+
+        .item.header {
+            min-width: 60vw;
+        }
+
+        .item.article {
+            flex-grow: 1;
+        }
+
+        .item.footer-content {
+            height: 20vh;
+        }
+
+        .item.menu {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-icon">
+        <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="item header">Header</div>
+            <div class="item article">Article</div>
+            <div class="item article">Article</div>
+        </div>
+        <div class="aside">
+            <div class="item menu">Menu</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="item footer-content">Footer</div>
+    </div>
+</body>
+
+</html>

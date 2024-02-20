@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Flexbox Exercises - Task Three</title>
+    <style>
+        html {
+            background-color: #deded8;
+            font-family: trebuchet, geneva, sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        article,
+        aside,
+        footer,
+        header {
+            padding: 0.5rem;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #ccc;
+            text-align: center;
+            border-bottom: 1px solid;
+        }
+
+        aside {
+            background-color: white;
+        }
+
+        nav {
+            display: flex;
+            background-color: black;
+            padding: 10px 0;
+        }
+
+        nav a {
+            flex: auto;
+            text-align: center;
+            background-color: #ccc;
+            color: black;
+            margin: 0 5px;
+            padding: 5px 0;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            outline: 1px solid red;
+            color: red;
+            text-decoration: underline;
+        }
+
+        .home-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        @media screen and (min-width: 30rem) {
+            body {
+                display: flex;
+                flex-direction: column;
+                max-width: 75rem;
+                margin: auto;
+            }
+
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                border-bottom: 0.5rem solid;
+            }
+
+            nav,
+            header {
+                order: -1;
+            }
+
+            article {
+                flex: 75%;
+            }
+
+            aside {
+                flex: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-icon">
+        <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+    </div>
+
+    <header>
+        <h1>Document Heading</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>This is the heading for the main section</h2>
+            <p>This is a paragraph of text</p>
+        </article>
+        <aside>Here is an aside</aside>
+    </main>
+
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Blog</a>
+        <a href="">Careers</a>
+        <a href="">Contact Us</a>
+    </nav>
+
+    <footer>
+        <p>Copyright &copy 2024 <a href="">Example Layout</a></p>
+    </footer>
+</body>
+
+</html>

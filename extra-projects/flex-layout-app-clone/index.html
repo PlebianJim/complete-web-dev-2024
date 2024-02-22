@@ -18,6 +18,10 @@
             height: 80vh;
         }
 
+        .container > * {
+            width: 200px;
+        }
+
         .red {
             background-color: #eb4d4b;
         }
@@ -104,6 +108,13 @@
                 <option value="stretch">Stretch</option>
             </select>
         </div>
+        <div>
+            <label for="flex-direction">Flex Direction:</label>
+            <select id="flex-direction">
+                <option value="column">Column</option>
+                <option value="row">Row</option>
+            </select>
+        </div>
     </div>
 
     <script>
@@ -114,12 +125,14 @@
         const flexWrapDropdown = document.getElementById('flex-wrap');
         const alignItemsDropdown = document.getElementById('align-items');
         const alignContentDropdown = document.getElementById('align-content');
+        const flexDirectionDropdown = document.getElementById('flex-direction');
 
         // Set the initial values
         flexContainer.style.justifyContent = justifyContentDropdown.value;
         flexContainer.style.flexWrap = flexWrapDropdown.value;
         flexContainer.style.alignItems = alignItemsDropdown.value;
         flexContainer.style.alignContent = alignContentDropdown.value;
+        flexContainer.style.flexDirection = flexDirectionDropdown.value 
 
         // Add event listeners to the dropdowns
         justifyContentDropdown.addEventListener('change', (event) => {
@@ -136,6 +149,10 @@
 
         alignContentDropdown.addEventListener('change', (event) => {
             flexContainer.style.alignContent = event.target.value;
+        });
+
+        flexDirectionDropdown.addEventListener('change', (event) => {
+            flexContainer.style.flexDirection = event.target.value;
         });
     </script>
 </body>

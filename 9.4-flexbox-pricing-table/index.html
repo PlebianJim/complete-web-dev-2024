@@ -9,16 +9,102 @@
   <style>
     body {
       font-family: "Sono", sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pricing-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .pricing-plan {
+      min-height: 300px;
+      min-width: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ededf0;
+      gap: 1rem;
+      border-radius: 0.25rem;
+    }
+
+    .plan-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .plan-price {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+
+    .plan-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+    }
+
+    .plan-features li {
+      font-weight: 600;
+    }
+
+    .plan-button {
+      background-color: #f8850c;
+      color: white;
+      border: none;
+      padding: 0.75em;
+      margin-bottom: 1rem;
+      border-radius: 0.15rem;
+      font-weight: 600;
     }
 
     /* Hint: What can you do with a media query and flexbox? */
-    @media (max-width: 1250px) {}
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+      }
+
+      .pricing-plan {
+        min-height: 250px;
+        min-width: 350px;
+      }
+
+      .plan-title {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .plan-price {
+        font-size: 2rem;
+      }
+
+      .plan-features {
+        gap: 0.25rem;
+      }
+
+      .plan-features li {
+        font-size: 0.75rem;
+      }
+
+      .plan-button {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="pricing-container">
-    
+
     <div class="pricing-plan">
       <div class="plan-title">Basic</div>
       <div class="plan-price">$9.99/month</div>

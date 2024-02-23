@@ -10,23 +10,26 @@
     body {
       padding: 0;
       margin: 0;
+      width: 100vw;
+      height: 100vh;
       box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
     .container {
       display: grid;
+      grid-template: repeat(8, 100px) / repeat(8, 100px);
     }
 
     .white {
       background-color: #f0d9b5;
-      height: 100px;
-      width: 100px;
+  
     }
 
     .black {
       background-color: #b58863;
-      height: 100px;
-      width: 100px;
     }
   </style>
 </head>

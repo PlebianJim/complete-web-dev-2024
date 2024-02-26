@@ -7,10 +7,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Bootstrap - Cards</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        section {
+            border: 1px solid black;
+            padding: 30px;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Bootstrap - Cards</h1>
 
+    <section>
+        <h6>Basic Card with mixed content and a fixed width:</h6>
+        <div class="flex-container">
+            <div class="card" style="width: 18rem;">
+                <img src="/11.0-bootstrap-intro/flower.jpg" alt="3 dots" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h6>Body</h6>
+        <p>The building block of a card is the .card-body. Use it whenever you need a padded section within a card</p>
+        <div class="card">
+            <div class="card-body">
+                This is some text within a card body
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h6>Titles, text and links</h6>
+        <p>Card titles are added using .card-title to an &lt;h*&gt; tag</p>
+        <p>Links are added using .card-link to an &lt;a&gt; tag</p>
+        <p>Subtitles are added using .card-subtitle to an &lt;h*&gt; tag</p>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card Link</a>
+                <a href="#" class="card-link">Another Link</a>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h6>Images</h6>
+        <p>.card-img-top places an image at the top of the card. With .card-text, text can be added to the card. <br> Text within card-text can also be styled with the standard HTML tags</p>
+        <div class="card" style="width: 18rem;">
+            <img src="/11.0-bootstrap-intro/flower.jpg" alt="another sunflower" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

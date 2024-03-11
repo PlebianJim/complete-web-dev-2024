@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,18 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./main.js" defer></script>
 </head>
+
 <body>
     <section id="text-entry">
-        <h1>Javascript Character Counter</h1>
-        <textarea name="textarea" id="textarea" cols="34" rows="10"
+        <h1>Javascript Character Counter with maximum limit</h1>
+        <textarea name="textarea" maxlength="250" id="textarea" cols="34" rows="10"
             placeholder="Enter text to count how many characters..."></textarea>
     </section>
 
     <section id="character-counter">
         <p>You have typed <span id="characters-typed">0</span> characters so far</p>
+        <p>You have <span id="characters-left">250</span> characters left</p>
     </section>
 </body>
+
 </html>
